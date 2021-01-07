@@ -19,18 +19,15 @@
         </tr>
     </thead>
 
-       <tbody id="tbl-img">
-         @*@foreach (Image i in Model)
+    <tbody id="tbl-img">
+        @*@foreach (Image i in Model)
          {
             <tr>
                 <td>
-                    <h4>
-                        <a href="@i.ImageUrl" target="_blank"> @i.Title </a>
-                    </h4>
-
-                    <a href="@i.ImageUrl" target="_blank">
-                        <img src="@i.ImageUrl" height=100 width=100 />
-                    </a>
+                          <a href="@i.ImageUrl" target="_blank">
+                            <h6>@i.Title</h6>
+                           <img src="@i.ImageUrl" height=50 width=50 />
+                         </a>
                 </td>
 
                 <td>@i.UploadDate</td>
